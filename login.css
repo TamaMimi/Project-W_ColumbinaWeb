@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #570987, #180027);
+    font-family: 'Arial', sans-serif;
+}
+
+header .header-a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(24, 0, 39, 0.9);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.logo img {
+    height: 100px;
+    /* ลดขนาด logo ลงเพื่อให้ดูสมส่วน */
+}
+
+main {
+    margin-top: 120px;
+    /* ปรับ margin ให้เหมาะสม */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    background-color: rgba(0, 0, 0, 0.6);
+    /* ใช้สีพื้นหลังเข้มเพื่อความคมชัด */
+    padding: 40px;
+    border-radius: 12px;
+    /* ใช้ขอบมนเล็กน้อย */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+    /* เพิ่มเงาให้สวยงาม */
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.2em;
+    /* ขนาดตัวอักษรลดลงเล็กน้อย */
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+label {
+    font-size: 1em;
+    color: #ffffff;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+    /* เพิ่มเงาภายใน */
+    font-size: 1em;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #570987;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 15px;
+    /* เพิ่มระยะห่างระหว่างปุ่ม */
+}
+
+button:hover {
+    background-color: #360057;
+    transform: translateY(-2px);
+}
+footer {
+    margin-top: auto;
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(24, 0, 39, 0.9);
+    color: #fff;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 10px;
+}

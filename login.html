@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Columbina | เข้าสู่ระบบ</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-a">
+            <div class="logo">
+                <img src="img/logo3.jpg" alt="logo">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="login-container">
+            <h1>เข้าสู่ระบบ</h1>
+            <form id="loginForm" onsubmit="return validateForm()">
+                <div class="input-group">
+                    <label for="username">ชื่อผู้ใช้:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">รหัสผ่าน:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">เข้าสู่ระบบ</button>
+            </form>
+            <!-- ปุ่มสำหรับย้อนกลับ -->
+            <button onclick="window.location.href='index.html'">ย้อนกลับ</button>
+            <p id="error-message" class="error-message"></p>
+        </div>
+    </main>
+    <footer>
+        <p>Columbina | รับเติมเกม รวดเร็จ ปลอดภัย</p>
+        <script src="login.js"></script>
+    </footer>
+</body>
+
+</html>
